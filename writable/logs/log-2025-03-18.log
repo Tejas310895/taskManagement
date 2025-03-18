@@ -1,0 +1,702 @@
+ERROR - 2025-03-18 16:03:14 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tasks', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Applications/MAMP/htdocs/title_task/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Applications/MAMP/htdocs/title_task/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-18 16:04:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'tasks', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Applications/MAMP/htdocs/title_task/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Applications/MAMP/htdocs/title_task/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-18 17:51:06 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:51:14 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:51:52 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:51:55 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:52:28 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:52:30 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:52:31 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:52:45 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:10 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:11 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:25 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:27 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:28 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:53:28 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:26 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:29 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:30 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:31 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:55 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:55:57 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:57:17 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:57:18 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:58:24 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:58:25 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 17:58:52 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:00:04 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:00:57 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:00:57 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:00:58 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:01:11 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:01:11 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:01:12 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: tasks]
+in APPPATH/Models/TaskModel.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-18 18:25:35 --> ParseError: syntax error, unexpected identifier "print_r"
+[Method: PUT, Route: tasks/1]
+in APPPATH/Controllers/TaskController.php on line 66.
+ 1 VENDORPATH/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/Applications/MAMP/htdocs/title_task/vendor/composer/../../app/Controllers/TaskController.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\TaskController')
+ 3 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\TaskController', true)
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:03:53 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:04:52 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:08:46 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:08:59 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:09:10 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:09:12 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:10:23 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:10:24 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:10:29 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:10:37 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:12:04 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:12:18 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:12:20 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:12:21 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:12:28 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:09 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:23 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:25 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:26 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:26 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:27 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:28 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:28 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:13:43 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:14:32 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:14:34 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:14:34 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:14:35 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:14:36 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:15:57 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:16:10 --> CodeIgniter\Shield\Authentication\AuthenticationException: jwt is not a valid authenticator.
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/AuthenticationException.php on line 28.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/Authentication.php(60): CodeIgniter\Shield\Authentication\AuthenticationException::forUnknownAuthenticator('jwt')
+ 2 VENDORPATH/codeigniter4/shield/src/Auth.php(95): CodeIgniter\Shield\Authentication\Authentication->factory('jwt')
+ 3 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(44): CodeIgniter\Shield\Auth->getAuthenticator()
+ 4 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:37:40 --> CodeIgniter\Shield\Exceptions\LogicException: Cannot decode JWT: Malformed UTF-8 characters
+[Method: GET, Route: tasks]
+in VENDORPATH/codeigniter4/shield/src/Authentication/JWT/Adapters/FirebaseAdapter.php on line 55.
+ 1 VENDORPATH/codeigniter4/shield/src/Authentication/JWT/JWSDecoder.php(40): CodeIgniter\Shield\Authentication\JWT\Adapters\FirebaseAdapter->decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 2 VENDORPATH/codeigniter4/shield/src/Authentication/JWTManager.php(92): CodeIgniter\Shield\Authentication\JWT\JWSDecoder->decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 3 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(163): CodeIgniter\Shield\Authentication\JWTManager->parse('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 4 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(83): CodeIgniter\Shield\Authentication\Authenticators\JWT->check([...])
+ 5 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(48): CodeIgniter\Shield\Authentication\Authenticators\JWT->attempt([...])
+ 6 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:37:40 --> [Caused by] DomainException: Malformed UTF-8 characters
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 522.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(372): Firebase\JWT\JWT::handleJsonError(5)
+ 2 VENDORPATH/firebase/php-jwt/src/JWT.php(113): Firebase\JWT\JWT::jsonDecode('{"typ":"JWT","alg":"HS254�')
+ 3 VENDORPATH/codeigniter4/shield/src/Authentication/JWT/Adapters/FirebaseAdapter.php(42): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', Object(Firebase\JWT\Key))
+ 4 VENDORPATH/codeigniter4/shield/src/Authentication/JWT/JWSDecoder.php(40): CodeIgniter\Shield\Authentication\JWT\Adapters\FirebaseAdapter->decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 5 VENDORPATH/codeigniter4/shield/src/Authentication/JWTManager.php(92): CodeIgniter\Shield\Authentication\JWT\JWSDecoder->decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 6 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(163): CodeIgniter\Shield\Authentication\JWTManager->parse('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJzdWIiOiIxIiwiaWF0IjoxNzQyMzI2NTE0LCJleHAiOjE3NDIzMzAxMTR9.MzFrLxaBspFd8eDDi24EqUzg_fuHVYdAiSlGqnusfFg', 'default')
+ 7 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(83): CodeIgniter\Shield\Authentication\Authenticators\JWT->check([...])
+ 8 VENDORPATH/codeigniter4/shield/src/Filters/JWTAuth.php(48): CodeIgniter\Shield\Authentication\Authenticators\JWT->attempt([...])
+ 9 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+10 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+11 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/title_task/public/index.php')
+CRITICAL - 2025-03-18 19:37:40 --> ErrorException: Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:45
+Stack trace:
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(45): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/API/ResponseTrait.php(103): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Debug/ExceptionHandler.php(85): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Debug/Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Shield\Exceptions\LogicException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Shield\Exceptions\LogicException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Shield\Exceptions\LogicException
+Cannot decode JWT: Malformed UTF-8 characters
+#0 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/shield/src/Authentication/JWT/JWSDecoder.php(40): CodeIgniter\Shield\Authentication\JWT\Adapters\FirebaseAdapter->decode('eyJ0eXAiOiJKV1Q...', 'default')
+#1 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/shield/src/Authentication/JWTManager.php(92): CodeIgniter\Shield\Authentication\JWT\JWSDecoder->decode('eyJ0eXAiOiJKV1Q...', 'default')
+#2 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(163): CodeIgniter\Shield\Authentication\JWTManager->parse('eyJ0eXAiOiJKV1Q...', 'default')
+#3 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/shield/src/Authentication/Authenticators/JWT.php(83): CodeIgniter\Shield\Authentication\Authenticators\JWT->check(Array)
+#4 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/shield/src/Filters/JWTAuth.php(48): CodeIgniter\Shield\Authentication\Authenticators\JWT->attempt(Array)
+#5 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Filters/Filters.php(241): CodeIgniter\Shield\Filters\JWTAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#7 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('tasks', 'before')
+#8 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Applications/MAMP/htdocs/title_task/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Applications/MAMP/htdocs/title_task/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Applications/M...')
+#13 {main}
+[Method: GET, Route: tasks]
+in SYSTEMPATH/Format/JSONFormatter.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
