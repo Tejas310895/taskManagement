@@ -42,6 +42,9 @@ class TaskController extends ResourceController
         try {
             $postData =  $this->request->getPost();
             $data = $this->model->insert($postData);
+            if(date('Y-m-d',strtotime($postData['due_date'])) < date('Y-m-d')){
+                return $this->failValidationErrors('Due date cannot be of past');
+            }
             if ($data) {
                 return $this->respondCreated($data);
             } else {
@@ -63,6 +66,9 @@ class TaskController extends ResourceController
     {
         try {
             $postData =  json_decode($this->request->getBody(),true);
+            if(date('Y-m-d',strtotime($postData['due_date'])) < date('Y-m-d')){
+                return $this->failValidationErrors('Due date cannot be of past');
+            }
             $data = $this->model->update($id,$postData);
             if ($data) {
                 return $this->respondUpdated($data, 'Task Updated Successfully');

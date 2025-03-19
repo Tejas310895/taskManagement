@@ -30,6 +30,7 @@ class TaskModel extends Model
     // Validation
     protected $validationRules = [
         'title' => 'required|alpha_numeric_space|min_length[3]',
+        'due_date' => 'required',
     ];
     protected $validationMessages   = [
         'title'=> 'The tile should be more then 3 digits',
